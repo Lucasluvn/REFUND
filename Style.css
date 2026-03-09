@@ -12,14 +12,14 @@
   border: none;
   background-color: transparent;
   outline: none;
+  justify-content: right;
 }
-
 .Caixa-Um{
-  width: 462px;
-  height: 500px;
+  max-width: 462px;
+  max-height: 500px;
   padding: 40px 40px; 
   border-radius: 5%;
-  background-color: #FFFFFF;
+  background-color: rgb(193, 227, 193);
   margin-right: 32px;
   }
  .Caixa-Um h1{
@@ -30,37 +30,91 @@
 }
 
 .Input-Box{
-  margin-top: 5%;
+  margin-top: 20px;
   width: 382px;
   height: 50px;
 }
-input{
-  border-radius: 10px;
-  display: flex;
+
+
+.Input-Box input{
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid;
+}
+.Input-numero{
+  justify-content: right;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  width:100% ;
+  height: 50px;
+  box-sizing: border-box;
+  display: block;
+  flex: 1;
+  flex-direction: column;
+  
+
+
+}
+
+.Input-numero input{
+  width: 50px;
+  height: 50px;
+  display: block;
+  box-sizing: border-box;
+  
+  
   }
 
+  .Input-texto input{
+  width: 50px;
+  height: 50%;
+  padding: 20px 20px;
+  }
 
+input{
+  position: relative;
+  border-radius: 10px;
+  display: block;
+  padding: 8px;
+  box-sizing: border-box;
+}
 
-
-
-
-
-
-
+.Adicionar-despesa{
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding:  52px 1px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  line-height: 1;
+}
 
 .Caixa-Dois{
   width: 600px;
   height: 600px;
   justify-content: end;
   border-radius: 30px;
-  background-color: #FFFFFF;
+  background-color: rgb(193, 227, 193);
   padding: 40px;
 }
 
 .Caixa-Dois ul {
 list-style: circle;
-padding: 40px;  
+padding: 30px 20px ;  
 margin: 0;
+}
+
+.Caixa-Dois header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px;
+
 }
 
 .container {
@@ -70,8 +124,9 @@ background-position: center;
 justify-content: center; 
 }
 
+
 body{
-  background-color: #E4ECE9;
+  background-color: rgb(150, 233, 160);
   min-height: 100vh;
 }
 
