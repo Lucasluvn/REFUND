@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="global.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <button class="Botao-Refund">
+    <img src="ASSETS/Logo.svg" alt="">
+  </button>
+  
+  <main class="container">
+    <div class="Caixa-Um">
+      <!-- ID adicionado ao formulário para capturar o evento de submit -->
+      <form id="form-refund">
+    
+        <h1>Solicitação de Reembolso</h1>
+        <p>Informe os dados da despesa para solicitar reembolso. A despesa será analisada e reembolsada em até 30 dias.</p>
+  
+        <div class="Input-Box">
+          <label for="expense-title">Título da despesa</label> 
+          <!-- ID adicionado para capturar o nome da despesa -->
+          <input type="text" id="expense-title" placeholder="" required>
+        </div>
+       
+        <div class="Input-Box">
+          <label for="expense-category">Categoria</label>
+          <!-- Mudado para select ou mantido input com ID para capturar a categoria -->
+          <select  id="expense-category" required> 
+            <option value=""></option>
+            <option value="fork-knife">Alimentação</option>
+            <option value="bed">Hospedagem</option>
+            <option value="taxi">Transporte</option>
+            <option value="globe">Serviços</option>
+            <option value="book">Outros</option>
+          </select>
+        </div>
+    
+        <div class="Input-Box">
+          <label for="expense-amount">Valor</label>
+          <!-- ID adicionado para capturar o valor numérico -->
+          <input type="text" id="expense-amount" placeholder="0,00" required> 
+        </div>
+     
+        <button type="submit" class="Adicionar-despesa" style="margin-top: 20px;">
+          <img src="ASSETS/Button.svg" alt="Adicionar despesa">
+        </button>
+      </form>
+    </div>
+     
+    <section class="Caixa-Dois">
+      <header>
+        <h1>Minhas Solicitaçoes</h1>
+        <!-- IDs adicionados para atualizar dinamicamente via JS -->
+        <span id="expenses-quantity"></span>
+        <strong id="expenses-total"></strong>
+      </header>
+   
+      <!-- ID adicionado na UL para fazer o append dos novos itens (li) -->
+      <ul id="expenses-list" class="Lista-Despesas">
+    
+      <!--  <li class="item">
+          <div class="Icone">
+            <img src="ASSETS/fork-knife.svg" alt="Um ícone de um garfo e faca">
+          </div>
+          <div class="Detalhes">
+            <strong>Almoço</strong>
+            <span>Alimentação</span>
+          </div> 
+          <div class="Precos"> 
+            <strong>R$: 34,78</strong>
+          </div>
+        </li>
+
+        <li class="item">
+          <div class="Icone">
+            <img src="ASSETS/bed.svg" alt="Ícone de uma cama">
+          </div>
+          <div class="Detalhes">
+            <strong>Hotel</strong>
+            <span>Hospedagem</span>
+          </div>
+          <div class="Precos"> 
+            <strong>R$: 1.200,00</strong>
+          </div>
+        </li>
+     
+        <li class="item">
+          <div class="Icone">
+            <img src="ASSETS/fork-knife.svg" alt="Um ícone de um garfo e faca">
+          </div>
+          <div class="Detalhes">
+            <strong>Lanche</strong>
+            <span>Alimentação</span>
+          </div>
+          <div class="Precos"> 
+            <strong>R$: 12,35</strong>
+          </div>
+        </li>
+
+        <li class="item">
+          <div class="Icone">
+            <img src="ASSETS/taxi.svg" alt="Um ícone de um carro que representa um táxi">
+          </div>
+          <div class="Detalhes">
+            <strong>Táxi</strong>
+            <span>Transporte</span>
+          </div>
+          <div class="Precos"> 
+            <strong>R$: 47,65</strong>
+          </div>
+        </li>
+
+        <li class="item">
+          <div class="Icone">
+            <img src="ASSETS/globe.svg" alt="Um ícone de um globo de internet">
+          </div>
+          <div class="Detalhes">
+            <strong>Internet</strong>
+            <span>Serviços</span>
+          </div>
+          <div class="Precos"> 
+            <strong>R$: 99,90</strong>
+          </div>
+        </li>
+
+        <li class="item">
+          <div class="Icone">
+            <img src="ASSETS/book.svg" alt="Um ícone de um livro">
+          </div>
+          <div class="Detalhes">
+            <strong>EBOOK</strong>
+            <span>Outros</span>
+          </div>
+          <div class="Precos"> 
+            <strong>R$: 25,89</strong>
+          </div>
+        </li> -->
+
+      </ul>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
