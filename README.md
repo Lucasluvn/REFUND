@@ -76,4 +76,4 @@ Para dúvidas ou sugestões, entre em contato com o desenvolvedor principal do p
 
 Email: animaalucas@gmail.com
 
-GitHub: Lucasluvn
+GitHub: www.github.com/Lucasluvn
